@@ -1,8 +1,8 @@
 'use strict';
 
 const config = {
-  channelAccessToken: '【LINEチャネルアクセストークン(長期)】',
-  channelSecret: '【LINEチャネルシークレット】',
+  channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN || '【LINEチャネルアクセストークン(長期)】',
+  channelSecret: process.env.LINE_CHANNEL_SECRET || '【LINEチャネルシークレット】',
 };
 
 const HELPER_BASE = process.env.HELPER_BASE || '../../helpers/';
